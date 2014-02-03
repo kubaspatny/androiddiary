@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/edit_story"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/icon_action_edit"
+        android:title="Edit Story"/>
+    
+    <item 
+        android:id="@+id/delete_story"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/deletestory_light"
+        android:title="Delete Story"/>
+
+</menu>

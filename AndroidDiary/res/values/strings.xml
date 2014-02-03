@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Diary</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="date_month">JAN</string>
+    <string name="date_date">24</string>
+    <string name="date_year">2014</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools" 
+        android:id="@+id/liinear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/rounded_corners_bg_2"                 
+        >
+        
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">    
+	        <TextView
+		        android:id="@+id/row_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"        
+		        android:text="Title"
+		        android:textSize="22sp"
+		        android:fontFamily="sans-serif-condensed"
+		        android:layout_alignParentLeft="true" 
+		        android:layout_toLeftOf="@+id/row_datelayout"  
+	        />
+	        
+	        <LinearLayout
+                android:id="@+id/row_datelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/row_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/date_month"
+                    android:textColor="#777777"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/row_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:includeFontPadding="false"
+                    android:text="@string/date_date"
+                    android:textColor="#777777"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/row_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/date_year"
+                    android:textColor="#777777"
+                    android:textSize="8sp" />
+            </LinearLayout>
+	        
+	    </RelativeLayout>
+	        
+	        <TextView
+	            android:id="@+id/row_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"        
+		        android:text="Text"
+		        android:textSize="14sp"
+		        android:textColor="#777777"
+		        android:fontFamily="sans-serif-condensed"
+		        android:lineSpacingMultiplier="1.2"		        
+		        android:ellipsize="end"
+		        android:maxLines="4"
+		        android:singleLine="false"    
+	        />
+        
+</LinearLayout>

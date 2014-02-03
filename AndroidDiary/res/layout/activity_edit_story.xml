@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editstory_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/editstoryview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/editstory_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/rounded_corners_bg_2"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:text="Title"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editstory_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emptybig"
+            android:fontFamily="sans-serif-light"            
+            android:inputType="textMultiLine"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="4dp"
+            android:text="Text"
+            android:textColor="#777777"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</ScrollView>

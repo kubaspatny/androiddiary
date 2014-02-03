@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kubaspatny.androiddiary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/DiaryTheme" >
+        <activity
+            android:name="com.kubaspatny.androiddiary.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kubaspatny.androiddiary.StoryView"
+            android:label="@null"  
+                  
+            android:parentActivityName="com.kubaspatny.androiddiary.MainActivity" >
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.kubaspatny.androiddiary.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.kubaspatny.androiddiary.EditStory"
+            android:label="@null"  
+            android:noHistory="true"  />
+        
+    </application>
+
+</manifest>
